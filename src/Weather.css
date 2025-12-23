@@ -1,0 +1,55 @@
+.p-w {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+    padding: 10px 14px;
+
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+
+    width: 100%;
+    max-width: 380px;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+}
+
+/* Mobile-first stacking if space is tight */
+@media (max-width: 400px) {
+    .p-w {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .p-w {
+        max-width: 420px;
+        padding: 12px 18px;
+    }
+
+    .logo {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .p-w {
+        max-width: 480px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+}

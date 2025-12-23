@@ -1,0 +1,71 @@
+.inputbox {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 18px;
+    margin: 10px 0;
+
+    border-radius: 40px;
+    border: none;
+    outline: none;
+
+    font-size: 16px; /* mobile-friendly */
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+/* Focus state */
+.inputbox:focus {
+    box-shadow: 0 0 0 2px dodgerblue;
+}
+
+/* Button */
+button {
+    width: 100%;
+    max-width: 200px;
+
+    padding: 12px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    background: dodgerblue;
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover & active */
+button:hover {
+    box-shadow: 0 6px 16px rgba(30, 144, 255, 0.4);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .inputbox {
+        max-width: 320px;
+    }
+
+    button {
+        max-width: 220px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .inputbox {
+        max-width: 360px;
+    }
+
+    button {
+        max-width: 240px;
+    }
+}
